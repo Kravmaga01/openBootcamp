@@ -23,17 +23,19 @@ Crear un objeto miCoche en el main y añadirle una puerta.
 Mostrar el número de puertas que tiene el objeto.*/
 
 class coche {
- public puerta:number;
- constructor(puerta:number){
-     this.puerta = puerta;
- }
- aumentarPuerta () :void {
-  this.puerta++;
+ static puerta:number = 0;
+ 
+  static aumentarPuerta () :void {
+     coche.puerta++;
  }
 }
-let objCoche = new coche(3); 
-console.log(objCoche.puerta);
-objCoche.aumentarPuerta();
-console.log(objCoche.puerta);
-objCoche.aumentarPuerta();
-console.log(objCoche.puerta);
+
+console.log(coche.puerta);
+coche.aumentarPuerta();
+console.log(coche.puerta);
+coche.aumentarPuerta();
+console.log(coche.puerta);
+coche.aumentarPuerta();
+console.log(coche.puerta);
+coche.aumentarPuerta();
+console.log(coche.puerta);
