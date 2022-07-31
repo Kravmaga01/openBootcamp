@@ -1,0 +1,39 @@
+/*Primera parte:
+
+Crear una función con tres parámetros que sean números que se suman entre sí.
+
+Llamar a la función en el main y darle valores.*/
+const sumar = (valor1:number, valor2:number, valor3:number ): number => {
+ return valor1+valor2+valor3;
+}
+
+
+console.log(sumar(2,4, 5));  
+
+/*Segunda parte:
+
+Crear una clase coche.
+
+Dentro de la clase coche, una variable numérica que almacene el número de puertas que tiene.
+
+Una función que incremente el número de puertas que tiene el coche.
+
+Crear un objeto miCoche en el main y añadirle una puerta.
+
+Mostrar el número de puertas que tiene el objeto.*/
+
+class coche {
+ public puerta:number;
+ constructor(puerta:number){
+     this.puerta = puerta;
+ }
+ aumentarPuerta () :void {
+  this.puerta++;
+ }
+}
+let objCoche = new coche(3); 
+console.log(objCoche.puerta);
+objCoche.aumentarPuerta();
+console.log(objCoche.puerta);
+objCoche.aumentarPuerta();
+console.log(objCoche.puerta);
